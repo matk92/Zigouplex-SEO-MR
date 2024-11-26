@@ -9,6 +9,7 @@ const Header = () => {
           <li><Link to="/" className="hover:underline">Accueil</Link></li>
           <li><Link to="/about" className="hover:underline">À propos</Link></li>
           <li><Link to="/services" className="hover:underline">Services</Link></li>
+          <li><Link to="/articles" className="hover:underline">Articles</Link></li>
           <li><Link to="/contact" className="hover:underline">Contact</Link></li>
         </ul>
       </nav>

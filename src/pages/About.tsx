@@ -44,7 +44,7 @@ const About = () => {
       </Helmet>
       <h1 className="text-4xl font-bold mb-6">À propos de Zigouplex</h1>
       <p className="text-xl mb-4">
-        Fondée en 2023, Zigouplex est née de la vision de simplifier la vie professionnelle et personnelle grâce à la technologie.
+        Fondée en 2024, Zigouplex est née de la vision de simplifier la vie professionnelle et personnelle grâce à la technologie.
       </p>
       <h2 className="text-2xl font-semibold mt-8 mb-4">Notre Mission</h2>
       <p className="mb-4">
