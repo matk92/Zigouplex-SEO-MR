@@ -1,35 +1,38 @@
-import { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Loading from './components/Loading'
-
-const Home = lazy(() => import('./pages/Home'))
-const About = lazy(() => import('./pages/About'))
-const Services = lazy(() => import('./pages/Services'))
-const Contact = lazy(() => import('./pages/Contact'))
-const Articles = lazy(() => import('./pages/Articles'))
+import Home from './pages/Home'
+import About from './pages/About'
+import Products from './pages/Products'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <Suspense fallback={<Loading />}>
+    <HelmetProvider>
+      <Router>
+        <div className="flex flex-col min-h-screen">
+          <Header />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
+              <Route path="/products" element={<Products />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/articles" element={<Articles />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
             </Routes>
           </main>
-        </Suspense>
-        <Footer />
-      </div>
-    </Router>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   )
 }
 
 export default App
+

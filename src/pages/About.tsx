@@ -1,87 +1,31 @@
 import { Helmet } from 'react-helmet-async'
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 
-const About = () => {
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Qu'est-ce que Zigouplex ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zigouplex est une plateforme innovante qui simplifie la gestion de projets et la collaboration pour les particuliers et les entreprises."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Comment Zigouplex protège-t-il mes données ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Zigouplex utilise un cryptage de bout en bout et des protocoles de sécurité avancés pour garantir la protection de vos données."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Zigouplex est-il adapté aux petites entreprises ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Oui, Zigouplex est conçu pour s'adapter à toutes les tailles d'entreprises, des freelances aux grandes corporations."
-        }
-      }
-    ]
-  }
-
+export default function About() {
   return (
     <div className="container mx-auto px-4 py-8">
       <Helmet>
         <title>À propos de Zigouplex - Notre histoire et notre mission</title>
-        <meta name="description" content="Découvrez l'histoire de Zigouplex, notre mission et comment nous révolutionnons la gestion de projets et la collaboration." />
-        <script type="application/ld+json">
-          {JSON.stringify(faqStructuredData)}
-        </script>
+        <meta name="description" content="Découvrez l'histoire de Zigouplex, notre mission pour une nutrition saine et nos engagements en matière de qualité et de durabilité." />
       </Helmet>
       <h1 className="text-4xl font-bold mb-6">À propos de Zigouplex</h1>
-      <p className="text-xl mb-4">
-        Fondée en 2024, Zigouplex est née de la vision de simplifier la vie professionnelle et personnelle grâce à la technologie.
-      </p>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Notre Mission</h2>
-      <p className="mb-4">
-        Chez Zigouplex, notre mission est de fournir des outils intuitifs et puissants qui permettent aux individus et aux équipes de travailler plus efficacement, de collaborer sans effort et de réaliser leurs objectifs plus rapidement.
-      </p>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Nos Valeurs</h2>
-      <ul className="list-disc list-inside mb-4">
-        <li>Innovation constante</li>
-        <li>Satisfaction client</li>
-        <li>Transparence et intégrité</li>
-        <li>Respect de la vie privée</li>
-        <li>Développement durable</li>
-      </ul>
-      <h2 className="text-2xl font-semibold mt-8 mb-4">Foire Aux Questions</h2>
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Qu'est-ce que Zigouplex ?</AccordionTrigger>
-          <AccordionContent>
-            Zigouplex est une plateforme innovante qui simplifie la gestion de projets et la collaboration pour les particuliers et les entreprises.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Comment Zigouplex protège-t-il mes données ?</AccordionTrigger>
-          <AccordionContent>
-            Zigouplex utilise un cryptage de bout en bout et des protocoles de sécurité avancés pour garantir la protection de vos données.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>Zigouplex est-il adapté aux petites entreprises ?</AccordionTrigger>
-          <AccordionContent>
-            Oui, Zigouplex est conçu pour s'adapter à toutes les tailles d'entreprises, des freelances aux grandes corporations.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Notre Histoire</h2>
+        <p className="mb-4">Zigouplex est né de la passion de deux amis nutritionnistes qui cherchaient à créer un complément alimentaire naturel et efficace. Après des années de recherche et de développement, nous avons lancé notre première boisson énergisante en 2020.</p>
+      </section>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">Notre Mission</h2>
+        <p className="mb-4">Chez Zigouplex, notre mission est de fournir des compléments alimentaires de haute qualité, 100% naturels et scientifiquement prouvés pour améliorer la santé et le bien-être de nos clients.</p>
+      </section>
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Nos Engagements</h2>
+        <ul className="list-disc pl-6">
+          <li>Ingrédients 100% naturels et biologiques</li>
+          <li>Processus de fabrication respectueux de l'environnement</li>
+          <li>Transparence totale sur nos ingrédients et nos méthodes</li>
+          <li>Recherche continue pour améliorer nos produits</li>
+        </ul>
+      </section>
     </div>
   )
 }
-
-export default About
 
