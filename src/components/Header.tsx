@@ -49,16 +49,18 @@ export default function Header() {
               <NavigationMenuTrigger>Produits</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                  <li className="row-span-3">
+                  <li className="row-span-3 relative">
                     <NavigationMenuLink asChild>
                       <a
                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                         href="/products"
+                        style={{ backgroundImage: 'url(/img/zigouplex-focus.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                       >
-                        <div className="mb-2 mt-4 text-lg font-medium">
+                        <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
+                        <div className="relative mb-2 mt-4 text-lg font-medium text-white">
                           Zigouplex
                         </div>
-                        <p className="text-sm leading-tight text-muted-foreground">
+                        <p className="relative text-sm leading-tight text-white">
                           Découvrez notre gamme de compléments alimentaires naturels
                         </p>
                       </a>
@@ -100,4 +102,3 @@ export default function Header() {
     </header>
   )
 }
-

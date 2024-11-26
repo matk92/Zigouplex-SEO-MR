@@ -9,6 +9,9 @@ import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsOfService from './pages/TermsOfService'
+import ProductEnergy from './pages/ProductEnergy'
+import ProductFocus from './pages/ProductFocus'
+import ProductRelax from './pages/ProductRelax'
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/products" element={<Products />} />
+              <Route path="/products/energy" element={<ProductEnergy />} />
+              <Route path="/products/focus" element={<ProductFocus />} />
+              <Route path="/products/relax" element={<ProductRelax />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
