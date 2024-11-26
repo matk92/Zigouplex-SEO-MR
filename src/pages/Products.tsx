@@ -6,9 +6,9 @@ import { CartItem } from '@/components/Cart'
 import ProductSchema from '@/components/ProductSchema'
 
 const products = [
-  { id: 1, name: "Zigouplex Energy", description: "Notre boisson énergisante phare", price: 29.99, image: "/images/zigouplex-energy.jpg" },
-  { id: 2, name: "Zigouplex Focus", description: "Pour une concentration optimale", price: 34.99, image: "/images/zigouplex-focus.jpg" },
-  { id: 3, name: "Zigouplex Relax", description: "Détente et récupération naturelle", price: 32.99, image: "/images/zigouplex-relax.jpg" },
+  { id: 1, name: "Zigouplex Energy", description: "Notre boisson énergisante phare", price: 29.99, image: "/img/zigouplex-energy.webp" },
+  { id: 2, name: "Zigouplex Focus", description: "Pour une concentration optimale", price: 34.99, image: "/img/zigouplex-focus.webp" },
+  { id: 3, name: "Zigouplex Relax", description: "Détente et récupération naturelle", price: 32.99, image: "/img/zigouplex-relax.webp" },
 ]
 
 export default function Products() {
