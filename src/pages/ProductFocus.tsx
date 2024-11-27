@@ -1,46 +1,124 @@
 import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Badge } from "@/components/ui/badge"
+import { Star, Brain, Zap, Leaf, ShieldCheck } from 'lucide-react'
+import ProductSchema from '@/components/ProductSchema'
 
 export default function ProductFocus() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-12">
       <Helmet>
-        <title>Zigouplex Focus - Améliorez votre concentration</title>
+        <title>Zigouplex Focus - Améliorez votre concentration naturellement</title>
         <meta name="description" content="Découvrez Zigouplex Focus, notre complément alimentaire naturel conçu pour améliorer votre concentration et votre clarté mentale." />
       </Helmet>
-      <Card className="w-full max-w-4xl mx-auto">
-        <CardHeader>
-          <CardTitle className="text-3xl font-bold">Zigouplex Focus</CardTitle>
-          <CardDescription>Améliorez votre concentration</CardDescription>
-        </CardHeader>
-        <CardContent className="grid md:grid-cols-2 gap-6">
-          <div>
-            <img 
-              src="/img/zigouplex-focus.webp?height=400&width=400" 
-              alt="Zigouplex Focus" 
-              className="w-full h-auto rounded-lg shadow-lg"
-              width={400}
-              height={400}
-            />
+
+      <div className="grid md:grid-cols-2 gap-12">
+        <div>
+          <img 
+            src="/images/zigouplex-focus.jpg" 
+            alt="Zigouplex Focus" 
+            className="w-full h-auto rounded-lg shadow-lg"
+            width={600}
+            height={600}
+          />
+        </div>
+
+        <div>
+          <h1 className="text-4xl font-bold mb-4">Zigouplex Focus</h1>
+          <p className="text-xl mb-4 text-muted-foreground">Améliorez votre concentration naturellement</p>
+          
+          <div className="flex items-center mb-4">
+            <div className="flex mr-2">
+              {[1, 2, 3, 4, 5].map((star) => (
+                <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            <span className="text-sm text-muted-foreground">(4.7/5 basé sur 95 avis)</span>
           </div>
-          <div className="space-y-4">
-            <p className="text-lg">Zigouplex Focus est spécialement formulé pour améliorer votre concentration et votre clarté mentale, vous aidant à rester productif toute la journée.</p>
-            <h3 className="text-xl font-semibold">Ingrédients :</h3>
-            <ul className="list-disc list-inside">
-              <li>Bacopa Monnieri</li>
-              <li>L-Théanine</li>
-              <li>Ginkgo Biloba</li>
-              <li>Phosphatidylsérine</li>
-            </ul>
-            <p className="font-semibold">Prix : 34,99 €</p>
+
+          <p className="text-3xl font-bold mb-6">34,99 €</p>
+
+          <div className="space-y-4 mb-6">
+            <Badge variant="outline" className="text-sm py-1 px-3">100% Naturel</Badge>
+            <Badge variant="outline" className="text-sm py-1 px-3">Sans additifs</Badge>
+            <Badge variant="outline" className="text-sm py-1 px-3">Vegan</Badge>
           </div>
-        </CardContent>
-        <CardFooter className="flex justify-end space-x-2">
-          <Button variant="outline">En savoir plus</Button>
-          <Button>Ajouter au panier</Button>
-        </CardFooter>
-      </Card>
+
+          <Button size="lg" className="w-full mb-4">Ajouter au panier</Button>
+          
+          <p className="text-sm text-muted-foreground mb-6">
+            Livraison gratuite pour toute commande supérieure à 50€. Retours gratuits sous 30 jours.
+          </p>
+
+          <Tabs defaultValue="description" className="w-full">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="description">Description</TabsTrigger>
+              <TabsTrigger value="ingredients">Ingrédients</TabsTrigger>
+              <TabsTrigger value="usage">Utilisation</TabsTrigger>
+            </TabsList>
+            <TabsContent value="description">
+              <Card>
+                <CardContent className="pt-6">
+                  <p>Zigouplex Focus est spécialement formulé pour améliorer votre concentration et votre clarté mentale. Notre formule unique combine des ingrédients naturels reconnus pour leurs bienfaits cognitifs, vous aidant à rester productif et concentré tout au long de la journée.</p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="ingredients">
+              <Card>
+                <CardContent className="pt-6">
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Bacopa Monnieri (améliore la mémoire et les fonctions cognitives)</li>
+                    <li>L-Théanine (favorise la relaxation sans somnolence)</li>
+                    <li>Ginkgo Biloba (améliore la circulation cérébrale)</li>
+                    <li>Phosphatidylsérine (soutient les fonctions cognitives)</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="usage">
+              <Card>
+                <CardContent className="pt-6">
+                  <p>Prenez deux gélules de Zigouplex Focus par jour, de préférence le matin avec un repas. Pour de meilleurs résultats, utilisez régulièrement pendant au moins 4 semaines. Ne pas dépasser la dose journalière recommandée. Consultez un professionnel de santé avant utilisation si vous êtes enceinte, allaitante ou sous traitement médical.</p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-3xl font-bold mb-8 text-center">Pourquoi choisir Zigouplex Focus ?</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {[
+            { icon: <Brain className="h-8 w-8 text-primary" />, title: "Améliore la concentration", description: "Restez focalisé sur vos tâches importantes" },
+            { icon: <Zap className="h-8 w-8 text-primary" />, title: "Boost cognitif", description: "Stimule les fonctions cérébrales naturellement" },
+            { icon: <Leaf className="h-8 w-8 text-primary" />, title: "100% naturel", description: "Formule à base de plantes et nutriments" },
+            { icon: <ShieldCheck className="h-8 w-8 text-primary" />, title: "Qualité garantie", description: "Ingrédients premium et tests rigoureux" },
+          ].map((feature, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  {feature.icon}
+                  <span className="ml-2">{feature.title}</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      <ProductSchema
+        name="Zigouplex Focus"
+        description="Complément alimentaire naturel conçu pour améliorer votre concentration et votre clarté mentale."
+        image="https://www.zigouplex.store/images/zigouplex-focus.jpg"
+        price={34.99}
+        currency="EUR"
+      />
     </div>
   )
 }

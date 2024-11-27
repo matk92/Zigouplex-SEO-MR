@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="grid md:grid-cols-2 gap-8">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Nos coordonnées</h2>
-          <p className="mb-2">Email: contact@zigouplex.com</p>
+          <p className="mb-2">Email: contact@zigouplex.store</p>
           <p className="mb-2">Téléphone: +33 1 23 45 67 89</p>
           <p className="mb-2">Adresse: 123 Rue de l'Innovation, 75001 Paris, France</p>
         </div>

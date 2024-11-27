@@ -10,8 +10,7 @@ interface BlogPostSchemaProps {
 
 export default function BlogPostSchema({ title, description, datePublished, author, url }: BlogPostSchemaProps) {
   const schemaData = {
-    "@context": "https://schema.org
-/",
+    "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": title,
     "description": description,
@@ -31,4 +30,3 @@ export default function BlogPostSchema({ title, description, datePublished, auth
     </Helmet>
   )
 }
-

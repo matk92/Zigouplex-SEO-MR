@@ -12,7 +12,7 @@ const products = [
 ]
 
 export default function Products() {
-  const [cartItems, setCartItems] = useState<CartItem[]>([])
+  const [, setCartItems] = useState<CartItem[]>([])
 
   const addToCart = (product: typeof products[0]) => {
     setCartItems(prevItems => {
@@ -27,8 +27,7 @@ export default function Products() {
   }
 
   return (
-    <div className="container mx
--auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8">
       <Helmet>
         <title>Produits Zigouplex - Compléments alimentaires naturels</title>
         <meta name="description" content="Découvrez notre gamme de compléments alimentaires Zigouplex : Energy, Focus et Relax. Des formules naturelles pour booster votre énergie et votre bien-être." />
@@ -56,7 +55,7 @@ export default function Products() {
             <ProductSchema
               name={product.name}
               description={product.description}
-              image={`https://www.zigouplex.com${product.image}`}
+              image={`https://www.zigouplex.store${product.image}`}
               price={product.price}
               currency="EUR"
             />
@@ -66,4 +65,3 @@ export default function Products() {
     </div>
   )
 }
-

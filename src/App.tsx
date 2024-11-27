@@ -12,6 +12,9 @@ import TermsOfService from './pages/TermsOfService'
 import ProductEnergy from './pages/ProductEnergy'
 import ProductFocus from './pages/ProductFocus'
 import ProductRelax from './pages/ProductRelax'
+import BlogPostBienfaits from './pages/BlogPostBienfaits'
+import BlogPostBoosterEnergie from './pages/BlogPostBoosterEnergie'
+import BlogPostZigouplexVsTraditional from './pages/BlogPostZigouplexVsTraditional'
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
               <Route path="/products/focus" element={<ProductFocus />} />
               <Route path="/products/relax" element={<ProductRelax />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/bienfaits-complements-alimentaires-naturels" element={<BlogPostBienfaits />} />
+              <Route path="/blog/booster-energie-naturellement" element={<BlogPostBoosterEnergie />} />
+              <Route path="/blog/zigouplex-vs-boissons-energisantes-traditionnelles" element={<BlogPostZigouplexVsTraditional />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
