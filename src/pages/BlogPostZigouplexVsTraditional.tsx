@@ -12,11 +12,11 @@ import { AlertTriangle, CheckCircle, BarChart2, Leaf, MessageCircle } from 'luci
 import { useEffect, useRef } from 'react'
 
 const tocItems = [
-  { id: "inconvenients", title: "Les inconvénients des boissons énergisantes traditionnelles" },
-  { id: "avantages", title: "Les avantages de Zigouplex" },
-  { id: "comparaison", title: "Comparaison détaillée" },
-  { id: "pourquoi-choisir", title: "Pourquoi choisir Zigouplex ?" },
-  { id: "temoignages", title: "Témoignages de nos clients" },
+  { id: "différent", title: "Pourquoi Zigouplex est différent ?" },
+  { id: "ingrédients", title: "Des ingrédients naturels rigoureusement sélectionnés" },
+  { id: "bienfaits", title: "Les bienfaits démontrés par la science" },
+  { id: "démarche", title: "Une démarche éthique et respectueuse de l’environnement" },
+  { id: "conseil", title: "Mon conseil santé" },
 ];
 
 const relatedArticles = [
@@ -27,6 +27,10 @@ const relatedArticles = [
   {
     title: "Comment booster son énergie naturellement",
     slug: "booster-energie-naturellement"
+  },
+  {
+    title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
+    slug: "révolution-naturelle-pour-votre-santé"
   }
 ];
 

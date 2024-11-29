@@ -29,6 +29,14 @@ const relatedArticles = [
   {
     title: "Zigouplex vs les boissons énergisantes traditionnelles",
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles"
+  },
+  {
+    title: "Comment booster son énergie naturellement",
+    slug: "booster-energie-naturellement"
+  },
+  {
+    title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
+    slug: "révolution-naturelle-pour-votre-santé"
   }
 ];
 

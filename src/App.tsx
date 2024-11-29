@@ -15,6 +15,7 @@ import ProductRelax from './pages/ProductRelax'
 import BlogPostBienfaits from './pages/BlogPostBienfaits'
 import BlogPostBoosterEnergie from './pages/BlogPostBoosterEnergie'
 import BlogPostZigouplexVsTraditional from './pages/BlogPostZigouplexVsTraditional'
+import BlogLesBienfaitsDeZigouplexParDrMarlega from './pages/BlogLesBienfaitsDeZigouplexParDrMarlega';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="/blog/révolution-naturelle-pour-votre-santé" element={<BlogLesBienfaitsDeZigouplexParDrMarlega />} />
             </Routes>
           </main>
           <Footer />

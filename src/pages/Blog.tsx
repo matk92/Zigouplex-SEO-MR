@@ -33,7 +33,14 @@ const blogPosts: BlogPost[] = [
     date: "2023-05-05",
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles",
     image: "/img/zigouplex-vs-traditional.webp"
-  }
+  },
+  {
+  title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
+  description: "Dans un monde où le stress, les rythmes effrénés, et les choix alimentaires discutables mettent à mal notre bien-être, il est crucial de se tourner vers des solutions simples, naturelles et efficaces. C’est dans cette optique que je me penche aujourd’hui sur une boisson qui a attiré mon attention : Zigouplex.",
+  date: "2024-11-28",
+  slug: "révolution-naturelle-pour-votre-santé",
+  image: "/img/Les-Bienfaits-de-Zigouplex-Par-Dr-Marlega.webp"
+}
 ];
 
 export default function Blog() {
