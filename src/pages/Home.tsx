@@ -84,6 +84,14 @@ export default function Home() {
             <p className="font-semibold">Marie L., 32 ans</p>
           </CardContent>
         </Card>
+        <Card>
+          <CardContent className="text-center py-8">
+            <p className="text-lg italic mb-4">
+              "YO ! 💪🔥Depuis que j’ai découvert Zigouplex, c’est simple : ma vie a changé ! 💯 Je me sens plein d’énergie et super focus, sans les coups de mou ni les effets chelous des boissons énergisantes classiques. 🚀 C’est devenu mon allié de tous les jours, que ce soit pour mes grosses sessions à la salle ou pour enchaîner mes projets avec la patate ! Si vous cherchez un truc naturel et efficace pour tout déchirer, je vous dis : GO ZIGOUPLEX ! 🔥✨"
+            </p>
+            <p className="font-semibold">Jean M., 28 ans</p>
+          </CardContent>
+        </Card>
       </section>
 
       {/* CTA Section */}
