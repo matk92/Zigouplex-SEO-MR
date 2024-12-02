@@ -38,7 +38,7 @@ const blogPosts: BlogPost[] = [
   title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
   description: "Dans un monde où le stress, les rythmes effrénés, et les choix alimentaires discutables mettent à mal notre bien-être, il est crucial de se tourner vers des solutions simples, naturelles et efficaces. C’est dans cette optique que je me penche aujourd’hui sur une boisson qui a attiré mon attention : Zigouplex.",
   date: "2024-11-28",
-  slug: "révolution-naturelle-pour-votre-santé",
+  slug: "les-bienfaits-de-zigouplex-par-dr-marlega",
   image: "/img/Les-Bienfaits-de-Zigouplex-Par-Dr-Marlega.webp"
 }
 ];

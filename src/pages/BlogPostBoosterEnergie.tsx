@@ -31,12 +31,8 @@ const relatedArticles = [
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles"
   },
   {
-    title: "Comment booster son énergie naturellement",
-    slug: "booster-energie-naturellement"
-  },
-  {
     title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
-    slug: "révolution-naturelle-pour-votre-santé"
+    slug: "les-bienfaits-de-zigouplex-par-dr-marlega"
   }
 ];
 

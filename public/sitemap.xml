@@ -2,68 +2,87 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://zigouplex.store/</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/products</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/products</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/products/energy</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/products/energy</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/products/focus</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/products/focus</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/products/relax</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/products/relax</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/about</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/about</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/blog</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/blog</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/contact</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/contact</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/privacy-policy</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/login</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/terms-of-service</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/privacy-policy</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/blog/bienfaits-complements-alimentaires-naturels</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/terms-of-service</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.zigouplex.store/forgot-password</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.zigouplex.store/register</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.zigouplex.store/blog/bienfaits-complements-alimentaires-naturels</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/blog/booster-energie-naturellement</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/blog/booster-energie-naturellement</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://zigouplex.store/blog/zigouplex-vs-boissons-energisantes-traditionnelles</loc>
-	<lastmod>2024-11-28T10:38:10+01:00</lastmod>
+	<loc>https://www.zigouplex.store/blog/zigouplex-vs-boissons-energisantes-traditionnelles</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
+<url>
+	<loc>https://www.zigouplex.store/blog/les-bienfaits-de-zigouplex-par-dr-marlega</loc>
+	<lastmod>2024-12-02T17:27:14+01:00</lastmod>
+	<priority>0.8</priority>
 </urlset>

@@ -50,7 +50,7 @@ export function TestimonialCarousel() {
   }, [isPaused, nextSlide]);
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto px-12">
+    <div className="relative w-full max-w-5xl mx-auto px-12">
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2">
         <Button
           variant="outline"

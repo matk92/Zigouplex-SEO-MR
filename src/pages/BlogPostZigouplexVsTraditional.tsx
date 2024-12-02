@@ -30,7 +30,7 @@ const relatedArticles = [
   },
   {
     title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
-    slug: "révolution-naturelle-pour-votre-santé"
+    slug: "les-bienfaits-de-zigouplex-par-dr-marlega"
   }
 ];
 
