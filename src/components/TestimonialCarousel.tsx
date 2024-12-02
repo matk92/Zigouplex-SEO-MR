@@ -24,10 +24,6 @@ const testimonials: Testimonial[] = [
   {
     content: "Zigouplex a changé ma routine matinale. Plus besoin de multiples tasses de café pour démarrer. Une dose le matin, et je suis prêt à affronter ma journée de travail avec clarté et énergie. Un vrai game-changer pour les professionnels occupés !",
     author: "Thomas B., 39 ans"
-  },
-  {
-    content: "Depuis que j'ai découvert Zigouplex, je ne peux plus m'en passer. J'ai enfin trouvé un complément alimentaire qui me donne l'énergie et la concentration dont j'ai besoin pour être au top toute la journée. Et en plus, c'est 100% naturel !",
-    author: "Julie D., 35 ans"
   }
 ];
 
@@ -61,6 +57,7 @@ export function TestimonialCarousel() {
           size="icon"
           onClick={prevSlide}
           className="h-12 w-12 rounded-full border-2 border-primary hover:bg-primary hover:text-primary-foreground"
+          aria-label="Témoignage précédent"
         >
           <ChevronLeft className="h-6 w-6" />
         </Button>
@@ -72,6 +69,7 @@ export function TestimonialCarousel() {
           size="icon"
           onClick={nextSlide}
           className="h-12 w-12 rounded-full border-2 border-primary hover:bg-primary hover:text-primary-foreground"
+          aria-label="Témoignage suivant"
         >
           <ChevronRight className="h-6 w-6" />
         </Button>
@@ -83,7 +81,10 @@ export function TestimonialCarousel() {
         onMouseLeave={() => setIsPaused(false)}
       >
         <CardContent className="p-8">
-          <div className="relative min-h-[200px]">
+          <div 
+            className="relative min-h-[300px] md:min-h-[200px] p-4 sm:p-8 overflow-hidden"
+            aria-live="polite"
+          >
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
@@ -96,7 +97,7 @@ export function TestimonialCarousel() {
                 }`}
               >
                 <div className="flex flex-col items-center text-center space-y-4">
-                  <p className="text-lg leading-relaxed italic text-muted-foreground">
+                  <p className="text-lg leading-relaxed italic text-muted-foreground break-words max-h-[200px] overflow-y-auto">
                     "{testimonial.content}"
                   </p>
                   <p className="font-semibold text-foreground">
@@ -109,16 +110,20 @@ export function TestimonialCarousel() {
         </CardContent>
       </Card>
 
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center mt-4 gap-4">
         {testimonials.map((_, index) => (
-          <button
+          <Button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
+            variant="ghost"
+            size="sm"
+            className={`w-4 h-4 p-0 rounded-full transition-all focus:outline focus:outline-2 focus:outline-primary ${
               index === currentIndex 
-                ? 'bg-primary w-4' 
-                : 'bg-primary/30'
+                ? 'bg-primary scale-125' 
+                : 'bg-primary/30 hover:bg-primary/50'
             }`}
+            aria-label={`Aller au témoignage ${index + 1}`}
+            aria-current={index === currentIndex ? 'true' : 'false'}
           />
         ))}
       </div>

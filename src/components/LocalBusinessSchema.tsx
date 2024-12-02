@@ -4,11 +4,16 @@ interface LocalBusinessSchemaProps {
   name: string
   description: string
   address: string
+  postalCode: string
+  addressLocality: string
+  addressCountry: string
   telephone: string
   url: string
+  priceRange: string
+  image: string
 }
 
-export default function LocalBusinessSchema({ name, description, address, telephone, url }: LocalBusinessSchemaProps) {
+export default function LocalBusinessSchema({ name, description, address, postalCode, addressLocality, addressCountry, telephone, url, priceRange, image }: LocalBusinessSchemaProps) {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -16,10 +21,15 @@ export default function LocalBusinessSchema({ name, description, address, teleph
     "description": description,
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": address
+      "streetAddress": address,
+      "postalCode": postalCode,
+      "addressLocality": addressLocality,
+      "addressCountry": addressCountry
     },
     "telephone": telephone,
-    "url": url
+    "url": url,
+    "priceRange": priceRange,
+    "image": image
   }
 
   return (

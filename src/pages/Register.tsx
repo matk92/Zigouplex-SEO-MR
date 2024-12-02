@@ -20,7 +20,7 @@ export default function Register() {
   return (
     <div 
     className="w-full h-screen flex justify-center items-center bg-gradient-to-b from-primary/5 to-primary/10"
-    style={{ backgroundImage: 'url(/img/mountain.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    style={{ backgroundImage: 'url(/img/mountain.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <Helmet>
         <title>Inscription - Zigouplex</title>

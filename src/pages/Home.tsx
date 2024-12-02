@@ -92,11 +92,15 @@ export default function Home() {
       <LocalBusinessSchema
         name="Zigouplex"
         description="Zigouplex produit des compléments alimentaires naturels sous forme de boissons énergisantes."
-        address="123 Rue de l'Innovation, 75001 Paris, France"
+        address="123 Rue de l'Innovation"
+        postalCode="75001"
+        addressLocality="Paris"
+        addressCountry="France"
         telephone="+33 1 23 45 67 89"
         url="https://www.zigouplex.store"
+        priceRange="€€"
+        image="https://www.zigouplex.store/favicon.svg"
       />
     </div>
   )
 }
-
