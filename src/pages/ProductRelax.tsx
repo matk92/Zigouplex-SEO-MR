@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { Star, Moon, Heart, Leaf, ShieldCheck } from 'lucide-react'
 import ProductSchema from '@/components/ProductSchema'
+import { ProductComments } from '../components/ProductComments'
 
 export default function ProductRelax() {
   return (
@@ -17,7 +18,7 @@ export default function ProductRelax() {
       <div className="grid md:grid-cols-2 gap-12">
         <div>
           <img 
-            src="/images/zigouplex-relax.jpg" 
+            src="/img/zigouplex-relax.webp" 
             alt="Zigouplex Relax" 
             className="w-full h-auto rounded-lg shadow-lg"
             width={600}
@@ -110,6 +111,36 @@ export default function ProductRelax() {
             </Card>
           ))}
         </div>
+      </div>
+
+      <div className="mt-16">
+        <h2 className="text-3xl font-bold mb-8 text-center">Avis de nos clients</h2>
+        <ProductComments comments={[
+          {
+            id: 1,
+            author: "Julie F.",
+            avatar: "/avatars/julie-f.jpg",
+            rating: 5,
+            content: "Zigouplex Relax est devenu mon rituel du soir. Il m'aide à me détendre après une longue journée et améliore considérablement la qualité de mon sommeil.",
+            date: "5 juin 2024"
+          },
+          {
+            id: 2,
+            author: "Marc L.",
+            avatar: "/avatars/marc-l.jpg",
+            rating: 4,
+            content: "J'utilise Zigouplex Relax pour gérer mon stress au travail. C'est incroyable comme je me sens plus calme et serein, même dans les moments les plus intenses.",
+            date: "20 mai 2024"
+          },
+          {
+            id: 3,
+            author: "Sarah K.",
+            avatar: "/avatars/sarah-k.jpg",
+            rating: 5,
+            content: "En tant que mère active, Zigouplex Relax m'aide à trouver des moments de calme dans ma journée chargée. C'est vraiment un produit fantastique !",
+            date: "12 juin 2024"
+          }
+        ]} />
       </div>
 
       <ProductSchema

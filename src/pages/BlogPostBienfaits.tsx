@@ -91,8 +91,8 @@ export default function BlogPostBienfaits() {
                 "url": "/logo.png"
               }
             },
-            "datePublished": "2023-05-15",
-            "dateModified": "2023-05-15"
+            "datePublished": "2024-05-15",
+            "dateModified": "2024-05-15"
           })}
         </script>
       </Helmet>

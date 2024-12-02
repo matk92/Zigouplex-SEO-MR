@@ -15,9 +15,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Ici, vous ajouteriez la logique pour envoyer le formulaire
     console.log('Formulaire soumis:', formData)
-    // Réinitialiser le formulaire après soumission
     setFormData({ name: '', email: '', message: '' })
   }
 

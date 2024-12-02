@@ -16,21 +16,21 @@ const blogPosts: BlogPost[] = [
   {
     title: "Les bienfaits des compléments alimentaires naturels",
     description: "Découvrez comment les compléments alimentaires naturels peuvent améliorer votre santé et votre bien-être au quotidien.",
-    date: "2023-05-15",
+    date: "2024-05-15",
     slug: "bienfaits-complements-alimentaires-naturels",
     image: "/img/complements-alimentaires.webp"
   },
   {
     title: "Comment booster son énergie naturellement",
     description: "Apprenez les meilleures techniques pour augmenter votre niveau d'énergie sans avoir recours à des stimulants artificiels.",
-    date: "2023-05-10",
+    date: "2024-05-10",
     slug: "booster-energie-naturellement",
     image: "/img/boost-energie.webp"
   },
   {
     title: "Zigouplex vs les boissons énergisantes traditionnelles",
     description: "Comparez les avantages de Zigouplex par rapport aux boissons énergisantes classiques et découvrez pourquoi le naturel l'emporte.",
-    date: "2023-05-05",
+    date: "2024-05-05",
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles",
     image: "/img/zigouplex-vs-traditional.webp"
   },

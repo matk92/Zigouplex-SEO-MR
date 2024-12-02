@@ -1,7 +1,7 @@
 'use client'
 
 import * as React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,12 +13,13 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { Cart } from './Cart'
-import { Menu } from 'lucide-react'
+import { Menu, UserCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet"
 
 const SheetContext = React.createContext<{
@@ -58,6 +59,7 @@ ListItem.displayName = "ListItem"
 const MobileMenu = () => {
   const { isOpen, setIsOpen } = React.useContext(SheetContext);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLinkClick = (to: string) => {
     setIsOpen(false);
@@ -110,6 +112,18 @@ const MobileMenu = () => {
                   Contact
                 </Link>
               </NavigationMenuItem>
+              <NavigationMenuItem>
+                {location.pathname === '/login' || location.pathname === '/register' ? (
+                  <Link to="/" className={navigationMenuTriggerStyle()} onClick={() => handleLinkClick('/')}>
+                    Accueil
+                  </Link>
+                ) : (
+                  <Link to="/login" className={navigationMenuTriggerStyle()} onClick={() => handleLinkClick('/login')}>
+                    <UserCircle className="mr-2 h-4 w-4" />
+                    Connexion
+                  </Link>
+                )}
+              </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
           <Cart />
@@ -121,6 +135,7 @@ const MobileMenu = () => {
 
 export default function Header() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const location = useLocation();
 
   return (
     <SheetContext.Provider value={{ isOpen, setIsOpen }}>
@@ -180,6 +195,18 @@ export default function Header() {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Cart />
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  {location.pathname === '/login' || location.pathname === '/register' ? (
+                    <Link to="/" className={navigationMenuTriggerStyle()}>
+                      Accueil
+                    </Link>
+                  ) : (
+                    <Link to="/login" className={navigationMenuTriggerStyle()}>
+                      <UserCircle className="mr-2 h-4 w-4" />
+                      Connexion
+                    </Link>
+                  )}
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>

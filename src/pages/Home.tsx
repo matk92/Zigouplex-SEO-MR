@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import LocalBusinessSchema from '@/components/LocalBusinessSchema'
 import { CheckCircle, Zap, Brain, Heart } from 'lucide-react'
+import { TestimonialCarousel } from '../components/TestimonialCarousel'
 
 export default function Home() {
   return (
@@ -76,22 +77,7 @@ export default function Home() {
       {/* Testimonial Section */}
       <section className="mb-16">
         <h2 className="text-3xl font-semibold mb-8 text-center">Ce que disent nos clients</h2>
-        <Card>
-          <CardContent className="text-center py-8">
-            <p className="text-lg italic mb-4">
-              "Depuis que j'ai découvert Zigouplex, mes journées sont transformées. Je me sens plus énergique et concentré, sans les effets secondaires des boissons énergisantes traditionnelles. C'est devenu mon allié indispensable au quotidien !"
-            </p>
-            <p className="font-semibold">Marie L., 32 ans</p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent className="text-center py-8">
-            <p className="text-lg italic mb-4">
-              "YO ! 💪🔥Depuis que j’ai découvert Zigouplex, c’est simple : ma vie a changé ! 💯 Je me sens plein d’énergie et super focus, sans les coups de mou ni les effets chelous des boissons énergisantes classiques. 🚀 C’est devenu mon allié de tous les jours, que ce soit pour mes grosses sessions à la salle ou pour enchaîner mes projets avec la patate ! Si vous cherchez un truc naturel et efficace pour tout déchirer, je vous dis : GO ZIGOUPLEX ! 🔥✨"
-            </p>
-            <p className="font-semibold">Jean M., 28 ans</p>
-          </CardContent>
-        </Card>
+        <TestimonialCarousel />
       </section>
 
       {/* CTA Section */}

@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import { CartItem } from '@/components/Cart'
 import ProductSchema from '@/components/ProductSchema'
+import { Link } from 'react-router-dom'
 
 const products = [
   { id: 1, name: "Zigouplex Energy", description: "Notre boisson énergisante phare", price: 29.99, image: "/img/zigouplex-energy.webp" },
@@ -49,8 +50,11 @@ export default function Products() {
               <CardDescription>{product.description}</CardDescription>
               <p className="text-lg font-bold mt-4 text-primary">{product.price.toFixed(2)} €</p>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex gap-2">
               <Button onClick={() => addToCart(product)} className="w-full">Ajouter au panier</Button>
+              <Button asChild variant="outline" className="w-full">
+                <Link to={`/products/${product.name.toLowerCase().split(' ')[1]}`}>En savoir plus</Link>
+              </Button>
             </CardFooter>
             <ProductSchema
               name={product.name}
