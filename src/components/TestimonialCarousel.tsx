@@ -24,6 +24,10 @@ const testimonials: Testimonial[] = [
   {
     content: "Zigouplex a changé ma routine matinale. Plus besoin de multiples tasses de café pour démarrer. Une dose le matin, et je suis prêt à affronter ma journée de travail avec clarté et énergie. Un vrai game-changer pour les professionnels occupés !",
     author: "Thomas B., 39 ans"
+  },
+  {
+    content: "Salut tous le monde ! ✨Depuis que j’ai découvert Zigouplex, je dois avouer un truc, je suis carrément un nouvel homme. 😎 Je me sens énergique, concentré, et franchement, c’est un vrai game-changer pour mes journées bien chargées (entre tourner répondre aux mails, et… procrastiner un peu quand même).Le mieux ? Pas d’effets chelous comme avec les boissons énergisantes classiques. Zigouplex, c’est 100 % naturel, efficace, et honnêtement… c’est mon nouveau meilleur pote. 🌟Si vous cherchez à booster vos journées, c’est clairement un gros OUI pour Zigouplex ! Testez, vous m’en direz des nouvelles. ✌️",
+    author: "Alan R., 51 ans"
   }
 ];
 
