@@ -19,6 +19,7 @@ import BlogLesBienfaitsDeZigouplexParDrMarlega from './pages/BlogLesBienfaitsDeZ
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route path="/forgot-password" element={<ForgotPassword />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

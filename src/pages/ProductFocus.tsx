@@ -119,26 +119,23 @@ export default function ProductFocus() {
           {
             id: 1,
             author: "Marie D.",
-            avatar: "/avatars/marie-d.jpg",
             rating: 5,
             content: "Zigouplex Focus a considérablement amélioré ma concentration au travail. Je peux maintenant rester focalisée sur mes tâches pendant des heures sans effort !",
-            date: "10 juin 2024"
+            date: "10 juin 2023"
           },
           {
             id: 2,
             author: "Paul G.",
-            avatar: "/avatars/paul-g.jpg",
             rating: 4,
             content: "En tant qu'étudiant, Zigouplex Focus m'a aidé à mieux me concentrer pendant mes révisions. Je le recommande vivement pour les longues sessions d'étude.",
-            date: "28 mai 2024"
+            date: "28 mai 2023"
           },
           {
             id: 3,
             author: "Laura B.",
-            avatar: "/avatars/laura-b.jpg",
             rating: 5,
             content: "J'adore comment Zigouplex Focus m'aide à rester concentrée sans les effets secondaires du café. C'est vraiment un produit game-changer !",
-            date: "15 juin 2024"
+            date: "15 juin 2023"
           }
         ]} />
       </div>

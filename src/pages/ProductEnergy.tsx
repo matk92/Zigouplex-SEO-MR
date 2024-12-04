@@ -119,26 +119,23 @@ export default function ProductEnergy() {
     {
       id: 1,
       author: "Sophie L.",
-      avatar: "/avatars/sophie-l.jpg",
       rating: 5,
       content: "Zigouplex Energy a complètement transformé mes matinées ! Je me sens tellement plus énergique et productive sans les effets secondaires des boissons énergisantes classiques.",
-      date: "15 mai 2024"
+      date: "15 mai 2023"
     },
     {
       id: 2,
       author: "Thomas M.",
-      avatar: "/avatars/thomas-m.jpg",
       rating: 4,
       content: "J'apprécie vraiment le boost naturel que me donne Zigouplex Energy. C'est devenu mon compagnon indispensable pour mes longues journées de travail.",
-      date: "3 juin 2024"
+      date: "3 juin 2023"
     },
     {
       id: 3,
       author: "Emma R.",
-      avatar: "/avatars/emma-r.jpg",
       rating: 5,
       content: "En tant que sportive, je cherchais une alternative saine aux boissons énergisantes traditionnelles. Zigouplex Energy répond parfaitement à mes besoins !",
-      date: "22 juin 2024"
+      date: "22 juin 2023"
     }
   ]} />
 </div>

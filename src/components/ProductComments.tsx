@@ -5,7 +5,7 @@ import { Star } from 'lucide-react'
 interface Comment {
   id: number;
   author: string;
-  avatar: string;
+  avatar?: string;
   rating: number;
   content: string;
   date: string;
@@ -23,7 +23,7 @@ export function ProductComments({ comments }: ProductCommentsProps) {
           <CardContent className="p-4">
             <div className="flex items-start space-x-4">
               <Avatar>
-                <AvatarImage src={comment.avatar} alt={comment.author} />
+                {comment.avatar && <AvatarImage src={comment.avatar} alt={comment.author} />}
                 <AvatarFallback>{comment.author[0]}</AvatarFallback>
               </Avatar>
               <div className="flex-1">
