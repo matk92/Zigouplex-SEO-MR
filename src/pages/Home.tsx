@@ -9,8 +9,26 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-12">
       <Helmet>
-        <title>Zigouplex - Complément alimentaire naturel et énergisant</title>
-        <meta name="description" content="Découvrez Zigouplex, le complément alimentaire sous forme de boisson qui booste votre énergie naturellement. Ingrédients 100% naturels et efficacité prouvée." />
+        <title>Zigouplex - Complément alimentaire naturel pour booster votre énergie</title>
+        <meta name="description" content="Découvrez Zigouplex, le complément alimentaire 100% naturel qui booste votre énergie, améliore votre concentration et soutient votre bien-être au quotidien." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Zigouplex",
+            "description": "Complément alimentaire naturel pour booster l'énergie et la concentration",
+            "brand": {
+              "@type": "Brand",
+              "name": "Zigouplex"
+            },
+            "offers": {
+              "@type": "AggregateOffer",
+              "priceCurrency": "EUR",
+              "lowPrice": "27.99",
+              "highPrice": "34.99"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
@@ -104,3 +122,4 @@ export default function Home() {
     </div>
   )
 }
+

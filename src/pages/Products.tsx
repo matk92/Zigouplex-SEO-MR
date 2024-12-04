@@ -42,7 +42,6 @@ export default function Products() {
                 src={product.image} 
                 alt={product.name} 
                 className="w-full h-48 object-cover" 
-                loading="lazy"
               />
             </CardHeader>
             <CardContent className="p-6">

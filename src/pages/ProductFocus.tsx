@@ -146,7 +146,7 @@ export default function ProductFocus() {
       <ProductSchema
         name="Zigouplex Focus"
         description="Complément alimentaire naturel conçu pour améliorer votre concentration et votre clarté mentale."
-        image="https://www.zigouplex.store/images/zigouplex-focus.jpg"
+        image="https://www.zigouplex.store/img/zigouplex-focus.webp"
         price={34.99}
         currency="EUR"
       />

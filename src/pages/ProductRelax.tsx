@@ -146,7 +146,7 @@ export default function ProductRelax() {
       <ProductSchema
         name="Zigouplex Relax"
         description="Complément alimentaire naturel conçu pour favoriser la détente et améliorer votre récupération."
-        image="https://www.zigouplex.store/images/zigouplex-relax.jpg"
+        image="https://www.zigouplex.store/img/zigouplex-relax.webp"
         price={27.99}
         currency="EUR"
       />

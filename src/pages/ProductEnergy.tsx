@@ -146,7 +146,7 @@ export default function ProductEnergy() {
       <ProductSchema
         name="Zigouplex Energy"
         description="Complément alimentaire naturel conçu pour booster votre énergie et votre vitalité au quotidien."
-        image="https://www.zigouplex.store/images/zigouplex-energy.jpg"
+        image="https://www.zigouplex.store/img/zigouplex-energy.webp"
         price={29.99}
         currency="EUR"
       />
