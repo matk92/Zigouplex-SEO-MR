@@ -40,6 +40,13 @@ const blogPosts: BlogPost[] = [
   date: "2024-11-28",
   slug: "les-bienfaits-de-zigouplex-par-dr-marlega",
   image: "/img/Les-Bienfaits-de-Zigouplex-Par-Dr-Marlega.webp"
+},
+{
+  title: "Les Bienfaits de la Nature - Zigouplex Blog",
+  description: "Découvrez les bienfaits de la nature pour votre santé et bien-être.",
+  date: "2024-12-08",
+  slug: "Les-Bienfaits-de-la-Nature-Zigouplex-Blog",
+  image: "/img/Les_Bienfaits_de_la_Nature_Zigouplex_Blog.webp"
 }
 ];
 

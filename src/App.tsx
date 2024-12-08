@@ -16,6 +16,7 @@ import BlogPostBienfaits from './pages/BlogPostBienfaits'
 import BlogPostBoosterEnergie from './pages/BlogPostBoosterEnergie'
 import BlogPostZigouplexVsTraditional from './pages/BlogPostZigouplexVsTraditional'
 import BlogLesBienfaitsDeZigouplexParDrMarlega from './pages/BlogLesBienfaitsDeZigouplexParDrMarlega'
+import LesBienfaitsDeLaNatureZigouplex from './pages/LesBienfaitsDeLaNatureZigouplex';
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
@@ -40,6 +41,7 @@ function App() {
               <Route path="/blog/booster-energie-naturellement" element={<BlogPostBoosterEnergie />} />
               <Route path="/blog/zigouplex-vs-boissons-energisantes-traditionnelles" element={<BlogPostZigouplexVsTraditional />} />
               <Route path="/blog/les-bienfaits-de-zigouplex-par-dr-marlega" element={<BlogLesBienfaitsDeZigouplexParDrMarlega />} />
+              <Route path="/blog/Les-Bienfaits-de-la-Nature-Zigouplex-Blog" element={<LesBienfaitsDeLaNatureZigouplex />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />

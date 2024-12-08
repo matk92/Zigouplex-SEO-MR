@@ -81,7 +81,7 @@ export default function BlogPostBoosterEnergie() {
             />
           </div>
           
-          <div className="bg-muted p-4 rounded-lg mb-6">
+          <div className="bg-muted p-4 rounded-lg mb-5">
             <TableOfContents items={tocItems} />
           </div>
           
