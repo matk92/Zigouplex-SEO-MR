@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { SearchBar } from '../components/SearchBar'
 import { Pagination } from '../components/Pagination'
+import { useState } from 'react'
 
 interface BlogPost {
   title: string;
