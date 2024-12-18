@@ -1,8 +1,10 @@
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { SearchBar } from '../components/SearchBar'
+import { Pagination } from '../components/Pagination'
 
 interface BlogPost {
   title: string;
@@ -16,41 +18,63 @@ const blogPosts: BlogPost[] = [
   {
     title: "Les bienfaits des compléments alimentaires naturels",
     description: "Découvrez comment les compléments alimentaires naturels peuvent améliorer votre santé et votre bien-être au quotidien.",
-    date: "2024-05-15",
+    date: "2024-12-15",
     slug: "bienfaits-complements-alimentaires-naturels",
     image: "/img/complements-alimentaires.webp"
   },
   {
     title: "Comment booster son énergie naturellement",
     description: "Apprenez les meilleures techniques pour augmenter votre niveau d'énergie sans avoir recours à des stimulants artificiels.",
-    date: "2024-05-10",
+    date: "2024-12-10",
     slug: "booster-energie-naturellement",
     image: "/img/boost-energie.webp"
   },
   {
     title: "Zigouplex vs les boissons énergisantes traditionnelles",
     description: "Comparez les avantages de Zigouplex par rapport aux boissons énergisantes classiques et découvrez pourquoi le naturel l'emporte.",
-    date: "2024-05-05",
+    date: "2024-12-05",
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles",
     image: "/img/zigouplex-vs-traditional.webp"
   },
   {
-  title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
-  description: "Dans un monde où le stress, les rythmes effrénés, et les choix alimentaires discutables mettent à mal notre bien-être, il est crucial de se tourner vers des solutions simples, naturelles et efficaces. C’est dans cette optique que je me penche aujourd’hui sur une boisson qui a attiré mon attention : Zigouplex.",
-  date: "2024-11-28",
-  slug: "les-bienfaits-de-zigouplex-par-dr-marlega",
-  image: "/img/Les-Bienfaits-de-Zigouplex-Par-Dr-Marlega.webp"
-},
-{
-  title: "Les Bienfaits de la Nature - Zigouplex Blog",
-  description: "Découvrez les bienfaits de la nature pour votre santé et bien-être.",
-  date: "2024-12-08",
-  slug: "Les-Bienfaits-de-la-Nature-Zigouplex-Blog",
-  image: "/img/Les_Bienfaits_de_la_Nature_Zigouplex_Blog.webp"
-}
+    title: "Les Bienfaits de Zigouplex : Une Révolution Naturelle pour Votre Santé",
+    description: "Dans un monde où le stress, les rythmes effrénés, et les choix alimentaires discutables mettent à mal notre bien-être, il est crucial de se tourner vers des solutions simples, naturelles et efficaces. C'est dans cette optique que je me penche aujourd'hui sur une boisson qui a attiré mon attention : Zigouplex.",
+    date: "2024-12-14",
+    slug: "les-bienfaits-de-zigouplex-par-dr-marlega",
+    image: "/img/Les-Bienfaits-de-Zigouplex-Par-Dr-Marlega.webp"
+  },
+  {
+    title: "Les Bienfaits de la Nature - Zigouplex Blog",
+    description: "Découvrez les bienfaits de la nature pour votre santé et bien-être.",
+    date: "2024-12-08",
+    slug: "Les-Bienfaits-de-la-Nature-Zigouplex-Blog",
+    image: "/img/Les_Bienfaits_de_la_Nature_Zigouplex_Blog.webp"
+  },
+  {
+    title: "Zigouplex.store x zigouplex.site : Une collaboration énergisante",
+    description: "Découvrez comment notre complément alimentaire naturel révolutionne l'art de la boulangerie artisanale française dans une collaboration unique avec zigouplex.site à Paris.",
+    date: "2024-12-18",
+    slug: "bakery-partnership",
+    image: "/img/partenariat.webp"
+  }
 ];
 
+blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 export default function Blog() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 3;
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = blogPosts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="container mx-auto px-4 py-8">
       <Helmet>
@@ -63,7 +87,7 @@ export default function Blog() {
         <SearchBar />
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post) => (
+        {currentPosts.map((post) => (
           <Card key={post.slug} className="flex flex-col">
             <img 
               src={post.image} 
@@ -85,6 +109,11 @@ export default function Blog() {
           </Card>
         ))}
       </div>
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
     </div>
   )
 }

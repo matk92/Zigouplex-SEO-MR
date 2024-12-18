@@ -26,6 +26,10 @@ const relatedArticles = [
   {
     title: "Zigouplex vs les boissons énergisantes traditionnelles",
     slug: "zigouplex-vs-boissons-energisantes-traditionnelles"
+  },
+  {
+    title: "Zigouplex.store x zigouplex.site : Une collaboration énergisante",
+    slug: "bakery-partnership"
   }
 ];
 

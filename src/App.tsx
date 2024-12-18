@@ -21,6 +21,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'
 import NotFound from './pages/NotFound'
+import BlogPostBakeryPartnership from './pages/BlogPostBakeryPartnership'
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
               <Route path="/blog/zigouplex-vs-boissons-energisantes-traditionnelles" element={<BlogPostZigouplexVsTraditional />} />
               <Route path="/blog/les-bienfaits-de-zigouplex-par-dr-marlega" element={<BlogLesBienfaitsDeZigouplexParDrMarlega />} />
               <Route path="/blog/Les-Bienfaits-de-la-Nature-Zigouplex-Blog" element={<LesBienfaitsDeLaNatureZigouplex />} />
+              <Route path="/blog/bakery-partnership" element={<BlogPostBakeryPartnership />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />

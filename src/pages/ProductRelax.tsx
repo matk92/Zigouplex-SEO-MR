@@ -121,21 +121,21 @@ export default function ProductRelax() {
             author: "Julie F.",
             rating: 5,
             content: "Zigouplex Relax est devenu mon rituel du soir. Il m'aide à me détendre après une longue journée et améliore considérablement la qualité de mon sommeil.",
-            date: "5 juin 2023"
+            date: "5 décembre 2024"
           },
           {
             id: 2,
             author: "Marc L.",
             rating: 4,
             content: "J'utilise Zigouplex Relax pour gérer mon stress au travail. C'est incroyable comme je me sens plus calme et serein, même dans les moments les plus intenses.",
-            date: "20 mai 2023"
+            date: "20 décembre 2024"
           },
           {
             id: 3,
             author: "Sarah K.",
             rating: 5,
             content: "En tant que mère active, Zigouplex Relax m'aide à trouver des moments de calme dans ma journée chargée. C'est vraiment un produit fantastique !",
-            date: "12 juin 2023"
+            date: "12 décembre 2024"
           }
         ]} />
       </div>
