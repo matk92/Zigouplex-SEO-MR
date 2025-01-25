@@ -56,6 +56,13 @@ const blogPosts: BlogPost[] = [
     date: "2024-12-18",
     slug: "bakery-partnership",
     image: "/img/partenariat.webp"
+  },
+  {
+    title: "Zigouplex annonce une nouvelle gamme dédiée aux sportifs",
+    description: "Découvrez la nouvelle gamme Zigouplex Sport Series, conçue pour les athlètes et amateurs de sport. Préparez-vous à repousser vos limites avec des produits 100 % naturels.",
+    date: "2025-01-25",
+    slug: "zigouplex-annonce-une-nouvelle-gamme-dédiée-aux-sportifs",
+    image: "/img/zigouplex-sport.webp"
   }
 ];
 
