@@ -153,7 +153,7 @@ export default function Header() {
                           <a
                             className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                             href="/products"
-                            style={{ backgroundImage: 'url(/img/zigouplex-focus.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+                            style={{ backgroundImage: 'url(/img/zigouplex-boost.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}
                           >
                             <div className="absolute inset-0 bg-black opacity-50 rounded-md"></div>
                             <div className="relative mb-2 mt-4 text-lg font-medium text-white">
@@ -173,6 +173,18 @@ export default function Header() {
                       </ListItem>
                       <ListItem href="/products/relax" title="Zigouplex Relax">
                         Détente et récupération naturelle
+                      </ListItem>
+                      <ListItem href="/products/boost" title="Zigouplex Boost">
+                        Une formule pré-entraînement
+                      </ListItem>
+                      <ListItem href="/products/recovery" title="Zigouplex Recovery">
+                        Un complément post-entraînement
+                      </ListItem>
+                      <ListItem href="/products/hydrate" title="Zigouplex Hydrate">
+                       Une solution d’hydratation enrichie en électrolytes
+                      </ListItem>
+                      <ListItem href="/products/perform+" title="Zigouplex Perform+">
+                        Un produit innovant destiné à améliorer la concentration et la résistance mentale lors des efforts intenses
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>
