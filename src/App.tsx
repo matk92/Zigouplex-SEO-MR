@@ -16,7 +16,7 @@ import BlogPostBienfaits from './pages/BlogPostBienfaits'
 import BlogPostBoosterEnergie from './pages/BlogPostBoosterEnergie'
 import BlogPostZigouplexVsTraditional from './pages/BlogPostZigouplexVsTraditional'
 import BlogLesBienfaitsDeZigouplexParDrMarlega from './pages/BlogLesBienfaitsDeZigouplexParDrMarlega'
-import LesBienfaitsDeLaNatureZigouplex from './pages/LesBienfaitsDeLaNatureZigouplex';
+import LesBienfaitsDeLaNatureZigouplex from './pages/LesBienfaitsDeLaNatureZigouplex'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ForgotPassword from './pages/ForgotPassword'

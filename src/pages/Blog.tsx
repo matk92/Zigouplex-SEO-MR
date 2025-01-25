@@ -16,6 +16,13 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    title: "2025 : Une année pleine d'énergie avec Zigouplex",
+    description: "Découvrez comment faire de 2025 votre année la plus énergique avec Zigouplex. Conseils, résolutions et nouveautés pour une santé optimale.",
+    date: "2025-01-06",
+    slug: "nouvelle-annee-2025-avec-zigouplex",
+    image: "/img/new-year-2025.webp"
+  },
+  {
     title: "Les bienfaits des compléments alimentaires naturels",
     description: "Découvrez comment les compléments alimentaires naturels peuvent améliorer votre santé et votre bien-être au quotidien.",
     date: "2024-12-15",
@@ -124,4 +131,3 @@ export default function Blog() {
     </div>
   )
 }
-
