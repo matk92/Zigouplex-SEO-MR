@@ -19,6 +19,7 @@ import ProductPerformPlus from './pages/ProductPerform+';
 import BlogPostBienfaits from './pages/BlogPostBienfaits'
 import BlogPostBoosterEnergie from './pages/BlogPostBoosterEnergie'
 import BlogPostZigouplexVsTraditional from './pages/BlogPostZigouplexVsTraditional'
+import BlogVenteZigouplexSport from './pages/BlogVenteZigouplexSport'
 import BlogLesBienfaitsDeZigouplexParDrMarlega from './pages/BlogLesBienfaitsDeZigouplexParDrMarlega'
 import LesBienfaitsDeLaNatureZigouplex from './pages/LesBienfaitsDeLaNatureZigouplex'
 import Login from './pages/Login'
@@ -53,6 +54,7 @@ function App() {
               <Route path="/blog/les-bienfaits-de-zigouplex-par-dr-marlega" element={<BlogLesBienfaitsDeZigouplexParDrMarlega />} />
               <Route path="/blog/Les-Bienfaits-de-la-Nature-Zigouplex-Blog" element={<LesBienfaitsDeLaNatureZigouplex />} />
               <Route path="/blog/bakery-partnership" element={<BlogPostBakeryPartnership />} />
+              <Route path="/blog/vente-zigouplex-sport" element={<BlogVenteZigouplexSport />} />
               <Route path="/blog/zigouplex-annonce-une-nouvelle-gamme-dédiée-aux-sportifs" element={<ArriverZigouplexSport />} />
               
               <Route path="/contact" element={<Contact />} />

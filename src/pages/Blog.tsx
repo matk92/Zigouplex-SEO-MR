@@ -70,6 +70,13 @@ const blogPosts: BlogPost[] = [
     date: "2025-01-25",
     slug: "zigouplex-annonce-une-nouvelle-gamme-dédiée-aux-sportifs",
     image: "/img/zigouplex-sport.webp"
+  },
+  {
+    title: "Les nouveaux produits Zigouplex pour le sport sont enfin disponibles !",
+    description: "Nous sommes ravis de vous annoncer que notre nouvelle gamme de produits dédiée aux sportifs est désormais disponible dans l’onglet Produits de notre boutique en ligne !",
+    date: "2025-01-27",
+    slug: "vente-zigouplex-sport",
+    image: "/img/vente-zigouplex-sport.webp"
   }
 ];
 
