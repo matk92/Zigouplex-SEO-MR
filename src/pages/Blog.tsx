@@ -77,6 +77,13 @@ const blogPosts: BlogPost[] = [
     date: "2025-01-27",
     slug: "vente-zigouplex-sport",
     image: "/img/vente-zigouplex-sport.webp"
+  },
+  {
+    title: "Zigouplex Boost : Le secret d’un entraînement performant et naturel",
+    description: "Vous cherchez un moyen naturel d’augmenter votre énergie et votre endurance avant vos séances d’entraînement ? Zigouplex a la solution pour vous !",
+    date: "2025-01-28",
+    slug: "vente-zigouplex-boost",
+    image: "/img/vente-zigouplex-boost.webp"
   }
 ];
 
