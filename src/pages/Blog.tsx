@@ -84,7 +84,14 @@ const blogPosts: BlogPost[] = [
     date: "2025-01-28",
     slug: "vente-zigouplex-boost",
     image: "/img/vente-zigouplex-boost.webp"
-  }
+  },
+  {
+    title: "Zigouplex Recovery : Votre allié pour une récupération musculaire optimale",
+    description: "Après un entraînement intense, votre corps a besoin d’un coup de pouce pour récupérer efficacement et réduire les courbatures.",
+    date: "2025-01-29",
+    slug: "vente-zigouplex-recovery",
+    image: "/img/vente-zigouplex-recovery.webp"
+  },
 ];
 
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
