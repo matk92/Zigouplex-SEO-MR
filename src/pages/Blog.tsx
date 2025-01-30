@@ -92,6 +92,14 @@ const blogPosts: BlogPost[] = [
     slug: "vente-zigouplex-recovery",
     image: "/img/vente-zigouplex-recovery.webp"
   },
+  {
+    title: "Zigouplex Hydrate : Restez Performant avec une Hydratation Optimale",
+    description: "L’hydratation est un élément essentiel de la performance sportive et du bien-être au quotidien.",
+    date: "2025-01-30",
+    slug: "vente-zigouplex-hydrate",
+    image: "/img/vente-zigouplex-hydrate.webp"
+  },
+
 ];
 
 blogPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
